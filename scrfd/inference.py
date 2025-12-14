@@ -222,7 +222,7 @@ class SCRFDInfer:
         return centers
 
 def main():
-    img_path = '/data/yjhwang/face/scrfd/iu.png'
+    img_path = '/data/yjhwang/face/scrfd/iu2.jpeg'
     model_path = '/data/yjhwang/face/scrfd/scrfd/scrfd_500m.pth'
     save_path = '/data/yjhwang/face/scrfd/result_iu2.png'
     

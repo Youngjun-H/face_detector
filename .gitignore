@@ -11,6 +11,17 @@ wheels/
 uv.lock
 .python-version
 
+# macOS
+.DS_Store
+
+# Images
 *.jpg
 *.jpeg
 *.png
+
+# Model files
+*.pth
+*.mlpackage/
+
+# Build outputs
+scrfd_detect

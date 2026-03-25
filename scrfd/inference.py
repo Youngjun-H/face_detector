@@ -222,9 +222,9 @@ class SCRFDInfer:
         return centers
 
 def main():
-    img_path = '/data/yjhwang/face/scrfd/iu2.jpeg'
-    model_path = '/data/yjhwang/face/scrfd/scrfd/scrfd_500m.pth'
-    save_path = '/data/yjhwang/face/scrfd/result_iu2.png'
+    img_path = 'iu.png'
+    model_path = 'scrfd_500m_kps.pth'
+    save_path = 'result_iu2.png'
     
     if not os.path.exists(img_path):
         print(f"Error: {img_path} not found.")
@@ -250,6 +250,8 @@ def main():
         
         score = bbox[4]
         x1, y1, x2, y2 = bbox[:4].astype(int)
+        print(f"BBox: {x1}, {y1}, {x2}, {y2}, score: {score}")
+        print(f"KPS: {kps}")
         
         color = (0, 255, 0)
         
